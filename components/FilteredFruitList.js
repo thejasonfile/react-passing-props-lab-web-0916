@@ -2,9 +2,10 @@ const React = require('react');
 const { Component } = require('react');
 
 function FilteredFruitList(props){
-  const list = !props.selectedFilter ? props.items : 
-  props.selectedFilter(i => i.fruit_type == props.selectedFilter);
-  debugger;
+  const list = !props.selectedFilter ? props.fruit :
+    props.fruit.filter(i => i.fruit_type == props.selectedFilter);
+
+  console.log(list)
 
   return(
     <ul className="fruit-list">

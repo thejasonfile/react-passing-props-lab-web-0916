@@ -8,7 +8,7 @@ function FruitBasket(props){
   return(
     <div className="fruit-basket">
       <Filter fetchFilters={props.fetchFilters} handleChange={props.handleFilterChange} filters={props.filters} />
-      <FilteredFruitList items={props.fruit} selectedFilter={props.selectedFilter} />
+      <FilteredFruitList fruit={props.fruit} selectedFilter={props.selectedFilter} />
     </div>
   )
 }
