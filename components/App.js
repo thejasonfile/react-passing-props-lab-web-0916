@@ -47,10 +47,4 @@ class App extends React.Component {
   }
 }
 
-// const App = () => {
-//   return (
-//     <FruitBasket />
-//   );
-// }
-
 module.exports = App;
